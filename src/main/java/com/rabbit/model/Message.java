@@ -6,16 +6,18 @@ import java.io.Serializable;
 import java.util.Date;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-
+ 
 /**
  * @author Justin Mathew
  *
  * Created On 15-Mar-2018
  */
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import com.google.common.cache.Cache;
 import com.rabbit.model.Message;
 @Component
-public class MessageCacheStorage {
+public class MessageCacheStorage    {
 	  @Autowired
 	  private Cache<String, Message> cache;
 
@@ -18,7 +18,13 @@ public class MessageCacheStorage {
 	  
 	  public Message getMessage(String queue)
 	  {
-  		 return cache.getIfPresent(queue);
+		  return cache.getIfPresent(queue);
 	  }
+	  
+	  public void invalidate(Object key)
+	  {
+		  cache.invalidate(key);
+	  }
+
 	  
 }
