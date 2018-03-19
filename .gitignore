@@ -1,1 +1,11 @@
+.classpath
+.gradle/
+.project
+.settings/
+.springBeans
+.~lock.personal.pub#
+id_rsa_work
+id_rsa_work.pub
+personal
+personal.pub
 
